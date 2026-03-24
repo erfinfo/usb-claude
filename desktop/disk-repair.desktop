@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Disk Repair Wizard
+Comment=Diagnostic et reparation de disques (SMART, fsck, TestDisk, boot repair)
+Exec=gnome-terminal --title="Disk Repair Wizard EFC" -- bash -c "/usr/local/bin/efc-disk-repair; exec bash"
+Icon=drive-harddisk
+Terminal=false
+Categories=System;
+StartupNotify=true
