@@ -1,1 +1,15 @@
+# ISO images (1.4 GB+)
 *.iso
+
+# Squashfs filesystem (1.3 GB)
+*.squashfs
+
+# Debootstrap chroot (4+ GB)
+chroot/
+
+# Build output directory (1.4 GB)
+build/
+
+# Temporary files
+*.tmp
+*.log
