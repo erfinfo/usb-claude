@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Backup Client
+Comment=Backup donnees client avec Midnight Commander
+Exec=gnome-terminal --title="Backup Client EFC" -- bash -c "/usr/local/bin/efc-backup-client; exec bash"
+Icon=drive-removable-media
+Terminal=false
+Categories=System;
+StartupNotify=true
