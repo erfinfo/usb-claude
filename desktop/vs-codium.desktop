@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=VS Codium
+Comment=Editeur de code avec Claude
+Exec=codium ~/projets
+Icon=codium
+Terminal=false
+Categories=Development;TextEditor;IDE;
+StartupNotify=true

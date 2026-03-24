@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Active Directory
+Comment=Outils AD (ldapsearch, samba-tool, realm join)
+Exec=gnome-terminal --title="Active Directory EFC" -- bash -c "/usr/local/bin/efc-ad-tools; exec bash"
+Icon=system-users
+Terminal=false
+Categories=System;Network;
+StartupNotify=true

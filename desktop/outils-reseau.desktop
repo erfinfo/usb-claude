@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Outils Reseau
+Comment=Diagnostic reseau (nmap, wireshark, arp-scan, etc.)
+Exec=gnome-terminal --title="Outils Reseau EFC" -- bash -c "/usr/local/bin/efc-network-tools; exec bash"
+Icon=network-workgroup
+Terminal=false
+Categories=Network;System;
+StartupNotify=true

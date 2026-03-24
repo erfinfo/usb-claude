@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Claude Code
+Comment=Claude Code AI Assistant (Mode Autonome)
+Exec=gnome-terminal --title="Claude Code" -- bash -c "claude --dangerously-skip-permissions; exec bash"
+Icon=utilities-terminal
+Terminal=false
+Categories=Development;
+StartupNotify=true

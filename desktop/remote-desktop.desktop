@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Remote Desktop
+Comment=Connexion RDP/VNC (Remmina)
+Exec=remmina
+Icon=org.remmina.Remmina
+Terminal=false
+Categories=Network;RemoteAccess;
+StartupNotify=true

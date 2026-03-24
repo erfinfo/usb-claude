@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Projets GitHub
+Comment=Ouvrir le dossier des projets
+Exec=nemo ~/projets
+Icon=folder-documents
+Terminal=false
+Categories=System;FileManager;
+StartupNotify=true

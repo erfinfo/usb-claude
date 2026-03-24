@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=EFC Toolkit
+Comment=Boite a outils MSP complete
+Exec=gnome-terminal --title="EFC Toolkit" -- bash -c "/usr/local/bin/efc-toolkit; exec bash"
+Icon=applications-utilities
+Terminal=false
+Categories=System;
+StartupNotify=true

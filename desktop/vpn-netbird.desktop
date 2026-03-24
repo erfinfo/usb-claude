@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=VPN NetBird
+Comment=Connexion VPN EFC (NetBird)
+Exec=gnome-terminal --title="VPN NetBird EFC" -- bash -c "/usr/local/bin/efc-vpn; exec bash"
+Icon=network-vpn
+Terminal=false
+Categories=Network;
+StartupNotify=true

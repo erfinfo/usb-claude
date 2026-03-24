@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Disques & Recovery
+Comment=GParted, testdisk, SMART, ddrescue
+Exec=gnome-terminal --title="Disques & Recovery EFC" -- bash -c "/usr/local/bin/efc-disk-tools; exec bash"
+Icon=drive-harddisk
+Terminal=false
+Categories=System;
+StartupNotify=true
