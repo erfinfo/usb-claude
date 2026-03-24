@@ -493,8 +493,16 @@ cp "$SQUASHFS_FILE" "$BUILD_DIR/live/filesystem.squashfs"
 
 # Config GRUB (UEFI)
 cat > "$BUILD_DIR/boot/grub/grub.cfg" << 'EOF'
+insmod part_gpt
+insmod ext2
+insmod fat
+insmod search_label
+
 set default=0
 set timeout=5
+
+# Chercher la partition Live par son label
+search --label USB-CLAUDE --set=root --no-floppy
 
 menuentry "USB-Claude - EFC Informatique" {
     linux /live/vmlinuz boot=live components persistence persistence-media=removable-usb quiet splash
