@@ -327,12 +327,17 @@ chroot "$CHROOT_DIR" bash -c "
 # === PHASE 5: INSTALLER CLAUDE CODE ===
 log_step "Installation de Claude Code"
 
-chroot "$CHROOT_DIR" bash -c "
-    # Installer Claude Code via le script natif
+# Installer en tant que l'utilisateur erick (pas root!)
+chroot "$CHROOT_DIR" su - "$USERNAME" -c "
     curl -fsSL https://claude.ai/install.sh | bash 2>/dev/null || {
         echo 'Installation Claude Code via npm fallback...'
         npm install -g @anthropic-ai/claude-code 2>/dev/null || echo 'Claude Code sera installe au premier boot'
     }
+"
+
+# S'assurer que le PATH est configure
+chroot "$CHROOT_DIR" bash -c "
+    echo 'export PATH=\"\\\$HOME/.local/bin:\\\$PATH\"' >> /home/${USERNAME}/.bashrc
 "
 
 # === PHASE 6: INSTALLER GITHUB CLI ===
